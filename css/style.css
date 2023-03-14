@@ -119,6 +119,7 @@ body {
 }
 
 .search-line {
+  padding: 10px 5px 10px 20px;
   background-color: transparent;
   display: block;
   cursor: pointer;
@@ -477,7 +478,7 @@ body {
 .card-bottom-buy {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 5px;
   margin-bottom: 16px;
 }
 
@@ -571,7 +572,6 @@ body {
 }
 
 .input-group {
-  min-width: 263px;
   position: relative;
   height: 53px;
   background-color: #ffffff;
@@ -603,6 +603,7 @@ body {
 }
 
 .feedback-form-button {
+  min-width: 258px;
   padding: 15px 25px;
   border: none;
   background: #6f73ee;
@@ -638,6 +639,7 @@ body {
 .footer-top-wrapper {
   display: flex;
   align-items: center;
+  gap: 95px;
 }
 
 .footer-title {
@@ -648,9 +650,11 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 445px;
 }
 
 .input-group {
+  min-width: 263px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   border: none;
@@ -665,6 +669,7 @@ body {
 }
 
 .footer-form-button {
+  padding: 15px 25px;
   background: #ffffff;
   border-radius: 5px;
   font-style: normal;
@@ -674,4 +679,221 @@ body {
   text-align: center;
   color: #6f73ee;
   border: none;
+}
+
+.footer-bottom {
+  padding-top: 46px;
+  background: #f4f7fb;
+}
+
+.footer-menu-title-bottom {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #282739;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+
+.footer-menu-list {
+  margin-top: 17px;
+}
+
+.footer-menu-column-2 {
+  gap: 44px;
+  min-width: 254px;
+  columns: 2;
+}
+
+.footer-menu-list {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.footer-menu-item {
+  margin-bottom: 10px;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5d6c7b;
+}
+
+.footer-info-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #282739;
+}
+
+.footer-text {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #282739;
+}
+
+.footer-info-inner {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-info {
+  min-width: 150px;
+}
+
+.footer-phone {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #282739;
+  text-decoration: none;
+}
+
+.footer-text-visit {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #5d6c7b;
+}
+
+.footer-info-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: #6f73ee;
+}
+
+.footer-seporator {
+  background-color: #5d6c7b;
+}
+
+.logo-link-footer {
+  margin-right: 59px;
+}
+
+.footer-bottom-application {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.apps-left {
+  display: flex;
+  gap: 10px;
+}
+
+.apps-right {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  background: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  width: 123px;
+  height: 45px;
+}
+
+.box-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #282739;
+}
+
+.box-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #5d6c7b;
+  margin: 0;
+}
+
+.footer-wrapper {
+  margin-top: 17px;
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+}
+
+.props-link,
+.footer-policy {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #5d6c7b;
+}
+
+.footer-content-right {
+  display: flex;
+  gap: 37px;
+}
+
+.pay-sistem {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.pay-sistem-card {
+  width: 34px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 0.486818px solid #eaebed;
+  border-radius: 2.92091px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-text {
+  margin: 0;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
