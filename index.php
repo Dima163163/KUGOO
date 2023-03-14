@@ -612,7 +612,7 @@
           <div class="footer-info-wrapper">
             <div class="footer-info-top">
               <h3 class="title footer-info-title">Контакты</h3>
-              <a href="#" class="footer-info-link">Заказать звонок</a>
+              
             </div>
               <div class="footer-info-inner">
                 <div class="footer-info">
@@ -626,6 +626,9 @@
                   <p class="footer-text footer-text-visit">Пн-Вс 10:00 - 20:00</p>
                 </div>
               </div>
+          </div>
+          <div class="footer-bottom-link">
+            <a href="#" class="footer-info-link">Заказать звонок</a>
           </div>
         </div>
         <hr class="footer-seporator">
