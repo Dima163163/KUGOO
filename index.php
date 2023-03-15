@@ -72,11 +72,11 @@
                 </button>
                 <div class="search">
                   <input class="search-line" placeholder="Искать самокат KUGO">
-                  <div class="search-icon-btn">
+                  <button type="submit" class="search-icon-btn">
                     <svg class="search-icon" width="16" height="16">
                       <use href="img/sprite.svg#lupe"></use>
                     </svg>
-                  </div>
+                  </button>
                 </div>
                 <div class="navbar-bottom-icons">
                   <div class="navbar-icons">
@@ -149,7 +149,7 @@
         <div class="section-model-inner">
             <div class="section-model-content">
             <h3 class="title section-model-title">
-              Определите максимально подходящую вам модель не теоретически, а на практике
+              Определите максимально подходящую вам модель <br> не теоретически, а на практике
             </h3>
             <p class="section-model-text">Тест-драйв поможет:</p>
             <ul class="section-model-list">
@@ -200,7 +200,7 @@
         <div class="section-education-inner">
             <div class="section-education-content">
             <h3 class="title section-education-title">
-              Научим правильной и безопасной езде в городе вас или вашего ребенка
+              Научим правильной <br> и безопасной езде в городе вас или вашего ребенка
             </h3>
             <p class="section-education-text">На обучении специалист расскажет:</p>
             <ul class="section-education-list">
@@ -245,7 +245,7 @@
     <div class="container">
       <div class="section-test-wrapper">
         <h3 class="title test-title">
-          Сейчас для тест-драйва и обучения доступны следующие модели
+          Сейчас для тест-драйва и обучения <br> доступны следующие модели
         </h3>
 
         <div class="test-cards-wrapper">
@@ -299,12 +299,12 @@
                   <div class="card-bottom-icon">
                     <div class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                      <use href="img/sprite.svg#heart2"></use>
+                      <use href="img/sprite.svg#pannier"></use>
                     </svg>
                     </div>
                     <div class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                      <use href="img/sprite.svg#pannier"></use>
+                      <use href="img/sprite.svg#heart2"></use>
                     </svg>
                     </div>
                   </div>
@@ -362,13 +362,13 @@
                   <div class="card-bottom-icon">
                     <div class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                      <use href="img/sprite.svg#heart2"></use>
-                    </svg>
+                        <use href="img/sprite.svg#pannier"></use>
+                      </svg>
                     </div>
                     <div class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                      <use href="img/sprite.svg#pannier"></use>
-                    </svg>
+                        <use href="img/sprite.svg#heart2"></use>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -425,13 +425,13 @@
                   <div class="card-bottom-icon">
                     <div class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                      <use href="img/sprite.svg#heart2"></use>
-                    </svg>
+                        <use href="img/sprite.svg#pannier"></use>
+                      </svg>
                     </div>
                     <div class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                      <use href="img/sprite.svg#pannier"></use>
-                    </svg>
+                        <use href="img/sprite.svg#heart2"></use>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -488,12 +488,12 @@
                   <div class="card-bottom-icon">
                     <div class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                        <use href="img/sprite.svg#heart2"></use>
+                        <use href="img/sprite.svg#pannier"></use>
                       </svg>
                     </div>
                     <div class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                        <use href="img/sprite.svg#pannier"></use>
+                        <use href="img/sprite.svg#heart2"></use>
                       </svg>
                     </div>
                   </div>
@@ -516,8 +516,7 @@
                 <p class="text feedback-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
                 <div class="input-group-wrapper">
                   <div class="input-group">
-                    <input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder="+7 (_ _ _) _ _ - _ _ - _ _" minlength="10" required>
-                    <!-- <label class="input-group-label" for="user-phone"></label> -->
+                    <input id="user-phone" type="tel" name="userphone" class="input input-phone phone-mask" placeholder="+7 (___) __ - __ - __" minlength="10" required>
                   </div>
                   <button type="submit" class="button feedback-form-button">Оставить заявку на тест-драйв</button>
                 </div>
@@ -548,8 +547,7 @@
           <h3 class="title footer-title">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h3>
           <div class="input-group-wrapper">
             <div class="input-group">
-              <input id="user-email" type="email" name="usermail" class="input input-email" placeholder="" minlength="10" required>
-              <label class="input-group-label input-group-email" for="user-email">Введите Ваш email</label>
+              <input id="user-email" type="email" name="usermail" class="input input-email" placeholder="Введите Ваш email" minlength="10" required>
             </div>
             <button type="submit" class="button footer-form-button">Подписаться</button>
           </div>
@@ -611,7 +609,7 @@
           </div>
           <div class="footer-info-wrapper">
             <div class="footer-info-top">
-              <h3 class="title footer-info-title">Контакты</h3>
+              <h3 class="footer-info-title">Контакты</h3>
               
             </div>
               <div class="footer-info-inner">
@@ -736,17 +734,17 @@
               </p>
               <div class="footer-social-link">
                 <a href="#" class="footer-link-social">
-                  <svg class="social-icon" width="12" height="12">
+                  <svg class="social-icon" width="16" height="16">
                     <use href="img/sprite.svg#viber"></use>
                   </svg>
                 </a>
                 <a href="#" class="footer-link-social">
-                  <svg class="social-icon" width="12" height="12">
+                  <svg class="social-icon" width="16" height="16">
                     <use href="img/sprite.svg#whatsapp"></use>
                   </svg>
                 </a>
                 <a href="#" class="footer-link-social">
-                  <svg class="social-icon" width="12" height="12">
+                  <svg class="social-icon" width="16" height="16">
                     <use href="img/sprite.svg#telegram"></use>
                   </svg>
                 </a>
