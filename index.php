@@ -509,7 +509,7 @@
   <section class="section section-feedback">
     <div class="container-image section-feedback-bg">
         <div class="container">
-          <div class="section-feedback-wrapper container">
+          <div class="section-feedback-wrapper">
             <form action="handler.php" method="POST" class="feedback-form">
               <div class="section-feedback-inner">
                 <h3 class="title feedback-title">Нет нужной модели, которую хотите протестировать?</h3>
@@ -521,11 +521,13 @@
                   <button type="submit" class="button feedback-form-button">Оставить заявку на тест-драйв</button>
                 </div>
                 <div class="notify">
-                  <svg class="notify-icon" width="16" height="16">
-                    <use href="img/sprite.svg#checkbox"></use>
-                  </svg>
+                  <div class="notify-box-icon">
+                    <svg class="notify-icon" width="10" height="10">
+                      <use href="img/sprite.svg#checkbox"></use>
+                    </svg>
+                  </div>
                   <p class="notify-text">
-                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политикой конфиденциальности
+                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a class="notify-text-link">политикой конфиденциальности</a>
                   </p>
                 </div>
               </div>
@@ -546,7 +548,7 @@
         <div class="footer-top-wrapper">
           <h3 class="title footer-title">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h3>
           <div class="input-group-wrapper">
-            <div class="input-group">
+            <div class="input-group input-group-mail">
               <input id="user-email" type="email" name="usermail" class="input input-email" placeholder="Введите Ваш email" minlength="10" required>
             </div>
             <button type="submit" class="button footer-form-button">Подписаться</button>
@@ -755,8 +757,51 @@
         </div>
       </div>
     </div>
-
   </footer>
+  <div class="modal" id="feedback-modal">
+    <div class="modal-dialog">
+      <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
+        <svg class="close-icon" width="30" height="30">
+          <use href="img/sprite.svg#close"></use>
+        </svg>
+      </a>
+      <div class="modal-wrapper">
+        <div class="modal-content">
+          <h2 class="modal-title">Запишитесь <br> на тест-драйв электросамоката</h2>
+          <p class="modal-text">и подберите модель для себя</p>
+          <p class="modal-text modal-text-small">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
+          <p class="modal-text modal-text-bottom">Как с вами удобнее связаться?</p>
+          <form action="handler.php" method="POST" class="modal-form">
+            <div class="input-group-wrapper modal-input-group">
+              <input id="modal-user-phone" type="tel" name="userphone" class="input input-modal phone-mask" placeholder="+7 (___) __ - __ -__" minlength="10" required>
+              <button type="submit" class="button modal-form-button">Оформить предзаказ</button>
+            </div>
+            
+            <div class="notify notify-modal">
+              <div class="notify-box-icon">
+                <svg class="notify-icon" width="10" height="10">
+                  <use href="img/sprite.svg#checkbox"></use>
+                </svg>
+              </div>
+              <p class="notify-text notify-text-modal">
+                Нажимая на кнопку, вы соглашаетесь <br> на обработку персональных данных и <a class="notify-text-link-modal">политикой конфиденциальности</a>
+              </p>
+            </div>
+          </form>      
+        </div>
+        <picture>
+          <source type="image/webp" srcset="img/modal-img.webp">
+          <source type="image/jpeg" srcset="img/modal-img.png">
+          <img src="img/modal-img.png" class="modal-image" width="337" height="497">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="alert-modal">
+    <div class="modal-dialog">
+      <h2 class="alert-modal-title">Спасибо за заявку!</h2>
+    </div>
+  </div>
 
     <script src="js/main.js"></script>
   </body>
