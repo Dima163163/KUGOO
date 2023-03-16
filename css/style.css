@@ -803,6 +803,10 @@ body {
   color: #5d6c7b;
 }
 
+.footer-menu-link:hover {
+  color: #6f73ee;
+}
+
 .footer-info-title {
   font-style: normal;
   margin-top: 0;
@@ -1267,6 +1271,9 @@ body {
   }
   .footer-info-link:hover {
     color: #6f73ee;
+  }
+  .footer-menu-link:hover {
+    color: #5d6c7b;
   }
 }
 
