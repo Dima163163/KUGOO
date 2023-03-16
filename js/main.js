@@ -135,6 +135,7 @@ formsEmail.forEach((formEmail) => {
             thisForm.reset();
             alertModal.classList.add("is-open");
             currentModal.classList.remove("is-open");
+            alertModal.classList.add("is-open");
             currentModal = alertModal;
             modalDialog = currentModal.querySelector(".modal-dialog");
             currentModal.addEventListener("click", (event) => {
@@ -180,6 +181,7 @@ formsPhone.forEach((formPhone) => {
             thisForm.reset();
             alertModal.classList.add("is-open");
             currentModal.classList.remove("is-open");
+            alertModal.classList.add("is-open");
             currentModal = alertModal;
             modalDialog = currentModal.querySelector(".modal-dialog");
             currentModal.addEventListener("click", (event) => {

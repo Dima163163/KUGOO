@@ -33,7 +33,7 @@
                   <a href="#" class="navbar-link">Сотрудничество</a>
                 </li>
                 <li class="navbar-item">
-                <a href="#" class="navbar-link">Заказать звонок</a>
+                <a href="#" class="navbar-link"  data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
                 </li>
                 <li class="navbar-item navbar-item-social">
                   <a href="#" class="navbar-link-social">
