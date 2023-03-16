@@ -861,6 +861,10 @@ body {
   color: #6f73ee;
 }
 
+.footer-info-link:hover {
+  color: blue;
+}
+
 .footer-seporator {
   background-color: #5d6c7b;
 }
@@ -1260,6 +1264,9 @@ body {
   }
   .modal-image {
     display: none;
+  }
+  .footer-info-link:hover {
+    color: #6f73ee;
   }
 }
 
