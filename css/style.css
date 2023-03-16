@@ -73,7 +73,7 @@ body {
   margin-bottom: 34px;
 }
 
-.logo-link {
+.logo {
   text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ body {
   border-color: yellow;
 }
 
-.search-icon-button {
+.button-search-icon {
   border: none;
   cursor: pointer;
   display: flex;
@@ -428,6 +428,7 @@ body {
 }
 
 .card-image {
+  aspect-ratio: 18/13;
   width: 100%;
 }
 
@@ -1133,6 +1134,7 @@ body {
 }
 
 .modal-image {
+  aspect-ratio: 337/497;
   height: 98%;
   padding-top: 10px;
 }

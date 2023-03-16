@@ -64,7 +64,7 @@
           <div class="navbar-bottom">
             <div class="container">
               <div class="navbar-bottom-wrapper">
-                <a href="./" class="logo-link">
+                <a href="./" class="logo">
                   <svg class="social-icon" width="116" height="43">
                     <use href="img/sprite.svg#logo"></use>
                   </svg>
@@ -79,7 +79,7 @@
                 </a>
                 <div class="search">
                   <input class="search-line" placeholder="Искать самокат KUGO">
-                  <button type="submit" class="button search-icon-button">
+                  <button type="submit" class="button button-search-icon">
                     <svg class="search-icon" width="16" height="16">
                       <use href="img/sprite.svg#lupe"></use>
                     </svg>
@@ -672,7 +672,7 @@
               </a>
             </div>
             <div class="apps-right">
-                  <a href="#" class="box box-vk">
+                  <a href="#" class="box box-link-vk">
                     <svg class="apps-icon" width="20" height="20">
                       <use href="img/sprite.svg#vk"></use>
                     </svg>
@@ -681,7 +681,7 @@
                       <p class="box-text">3 300</p>
                     </div>
                   </a>
-                  <a href="#" class="box box-youtube">
+                  <a href="#" class="box box-link-youtube">
                     <svg class="apps-icon" width="20" height="20">
                       <use href="img/sprite.svg#yt"></use>
                     </svg>
@@ -690,7 +690,7 @@
                       <p class="box-text">3 603</p>
                     </div>
                   </a>
-                  <a href="#" class="box box-telegram">
+                  <a href="#" class="box box-link-telegram">
                     <svg class="apps-icon" width="20" height="20">
                       <use href="img/sprite.svg#tg"></use>
                     </svg>
