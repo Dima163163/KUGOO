@@ -32,74 +32,6 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
-// const forms = document.querySelectorAll("form");
-// forms.forEach((form) => {
-//   console.log(form);
-// });
-
-const forms = document.querySelectorAll("form"); // Собираем формы
-forms.forEach((form) => {
-  const validation = new JustValidate(form, {
-    errorFieldCssClass: "is-invalid",
-  });
-  validation
-    .addField("[name=userphone]", [
-      {
-        rule: "required",
-        errorMessage: "Укажите телефон",
-      },
-      {
-        rule: "minLength",
-        value: 18,
-        errorMessage: "Введите все цифры",
-      },
-    ])
-    .addField("[name=useremail]", [
-      {
-        rule: "required",
-        errorMessage: "Укажите email",
-      },
-      {
-        rule: "email",
-        errorMessage: "Укажите email",
-      },
-      {
-        rule: "minLength",
-        value: 10,
-        errorMessage: "Максимально 40 символов",
-      },
-    ])
-    .onSuccess((event) => {
-      const thisForm = event.target; // наша форма
-      const formData = new FormData(thisForm); // данные из нашей формы
-      const ajaxSend = (formData) => {
-        fetch(thisForm.getAttribute("action"), {
-          method: thisForm.getAttribute("method"),
-          body: formData,
-        }).then((response) => {
-          if (response.ok) {
-            thisForm.reset();
-            alertModal.classList.add("is-open");
-            currentModal.classList.remove("is-open");
-            currentModal = alertModal;
-            modalDialog = currentModal.querySelector(".modal-dialog");
-            /* отслеживаем клик по окну и пустым областям */
-            currentModal.addEventListener("click", (event) => {
-              /* если клик в пустую область (не диалог)*/
-              if (!event.composedPath().includes(modalDialog)) {
-                /* закрываем оно */
-                currentModal.classList.remove("is-open");
-              }
-            });
-          } else {
-            alert("Ошибка. Текст ошибки: ".response.statusText);
-          }
-        });
-      };
-      ajaxSend(formData);
-    });
-});
-
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {
   /* если вводят семерку, добавляем ей скобку */
@@ -168,4 +100,98 @@ document.addEventListener("input", (e) => {
     /* итог: номер в формате +7 (999) 123-45-67 */
     input.value = result;
   }
+});
+
+const formsEmail = document.querySelectorAll(".user-email-form"); // Собираем формы
+formsEmail.forEach((formEmail) => {
+  const validation = new JustValidate(formEmail, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validation
+    .addField("[name=useremail]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите email",
+      },
+      {
+        rule: "email",
+        errorMessage: "Укажите email",
+      },
+      {
+        rule: "minLength",
+        value: 15,
+        errorMessage: "Минимум 15 символов",
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target; // наша форма
+      const formDataEmail = new FormData(thisForm); // данные из нашей формы
+      const ajaxSend = (formDataPhone) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formDataEmail,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alertModal.classList.add("is-open");
+            currentModal.classList.remove("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            currentModal.addEventListener("click", (event) => {
+              if (!event.composedPath().includes(modalDialog)) {
+                currentModal.classList.remove("is-open");
+              }
+            });
+          } else {
+            alert("Ошибка. Текст ошибки: ".response.statusText);
+          }
+        });
+      };
+      ajaxSend(formDataEmail);
+    });
+});
+
+const formsPhone = document.querySelectorAll(".user-phone-form"); // Собираем формы
+formsPhone.forEach((formPhone) => {
+  const validation = new JustValidate(formPhone, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validation
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите телефон",
+      },
+      {
+        rule: "minLength",
+        value: 18,
+        errorMessage: "Введите все цифры",
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target; // наша форма
+      const formDataPhone = new FormData(thisForm); // данные из нашей формы
+      const ajaxSend = (formDataPhone) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formDataPhone,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alertModal.classList.add("is-open");
+            currentModal.classList.remove("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            currentModal.addEventListener("click", (event) => {
+              if (!event.composedPath().includes(modalDialog)) {
+                currentModal.classList.remove("is-open");
+              }
+            });
+          } else {
+            alert("Ошибка. Текст ошибки: ".response.statusText);
+          }
+        });
+      };
+      ajaxSend(formDataPhone);
+    });
 });

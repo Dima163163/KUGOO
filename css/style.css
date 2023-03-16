@@ -1097,6 +1097,7 @@ body {
 }
 
 .modal-form-button {
+  margin-top: 20px;
   padding: 15px 25px;
   color: #ffffff;
   border-radius: 5px;
