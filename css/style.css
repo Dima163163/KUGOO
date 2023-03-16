@@ -1313,6 +1313,9 @@ body {
   .navbar-bottom-wrapper {
     gap: 10px;
   }
+  .button-image {
+    width: 100%;
+  }
   .section-image-content {
     padding-left: 0;
   }
@@ -1331,6 +1334,12 @@ body {
     font-size: 24px;
     line-height: 30px;
   }
+  .section-model-inner {
+    width: 90%;
+  }
+  .section-education-inner {
+    width: 90%;
+  }
   .section-model-image {
     max-width: 100%;
     border-radius: 0;
@@ -1338,6 +1347,10 @@ body {
   .section-education-image {
     max-width: 100%;
     border-radius: 0;
+  }
+  .education-icon {
+    min-width: 25px;
+    min-height: 25px;
   }
   .input-group-wrapper {
     justify-content: center;
