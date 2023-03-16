@@ -1348,6 +1348,7 @@ body {
     max-width: 100%;
     border-radius: 0;
   }
+  .model-icon,
   .education-icon {
     min-width: 25px;
     min-height: 25px;
