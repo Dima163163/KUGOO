@@ -136,7 +136,7 @@
                     <div class="section-image-item-text">Проверите лучшие самокаты в деле</div>
                   </div>
                 </div>
-                <button class="image-button">Записаться</button>
+                <button class="button button-image" data-toggle="modal" data-target="#feedback-modal">Записаться</button>
               </div>
             </div>
           </div>
@@ -297,19 +297,19 @@
                       <h5 class="price-title-sale">29 900 ₽</h5>
                   </div>
                   <div class="card-bottom-icon">
-                    <div class="bottom-icon-box">
+                    <button class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                      <use href="img/sprite.svg#pannier"></use>
-                    </svg>
-                    </div>
-                    <div class="bottom-icon-box">
+                        <use href="img/sprite.svg#pannier"></use>
+                      </svg>
+                    </button>
+                    <button class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
-                      <use href="img/sprite.svg#heart2"></use>
-                    </svg>
-                    </div>
+                        <use href="img/sprite.svg#heart2"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
-                <button class="card-button">Записаться на тест-драйв</button>
+                <button class="button button-card" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
             </div>
           </div>
           <div class="test-card">
@@ -360,19 +360,19 @@
                       <h5 class="price-title-sale">29 900 ₽</h5>
                   </div>
                   <div class="card-bottom-icon">
-                    <div class="bottom-icon-box">
+                    <button class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#pannier"></use>
                       </svg>
-                    </div>
-                    <div class="bottom-icon-box">
+                    </button>
+                    <button class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#heart2"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
-                <button class="card-button">Записаться на тест-драйв</button>
+                <button class="button button-card" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
             </div>
           </div>
           <div class="test-card">
@@ -423,19 +423,19 @@
                       <h5 class="price-title-sale">29 900 ₽</h5>
                   </div>
                   <div class="card-bottom-icon">
-                    <div class="bottom-icon-box">
+                    <button class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#pannier"></use>
                       </svg>
-                    </div>
-                    <div class="bottom-icon-box">
+                    </button>
+                    <button class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#heart2"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
-                <button class="card-button">Записаться на тест-драйв</button>
+                <button class="button button-card" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
             </div>
           </div>
           <div class="test-card">
@@ -486,19 +486,19 @@
                       <h5 class="price-title-sale">29 900 ₽</h5>
                   </div>
                   <div class="card-bottom-icon">
-                    <div class="bottom-icon-box">
+                    <button class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#pannier"></use>
                       </svg>
-                    </div>
-                    <div class="bottom-icon-box">
+                    </button>
+                    <button class="bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#heart2"></use>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
-                <button class="card-button">Записаться на тест-драйв</button>
+                <button class="button button-card" data-toggle="modal" data-target="#feedback-modal">Записаться на тест-драйв</button>
             </div>
           </div>
         </div>
@@ -511,7 +511,6 @@
         <div class="container">
           <div class="section-feedback-wrapper">
             <form action="handler.php" method="POST" class="feedback-form">
-              <div class="section-feedback-inner">
                 <h3 class="title feedback-title">Нет нужной модели, которую хотите протестировать?</h3>
                 <p class="text feedback-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
                 <div class="input-group-wrapper">
@@ -530,7 +529,6 @@
                     Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a class="notify-text-link">политикой конфиденциальности</a>
                   </p>
                 </div>
-              </div>
             </form>
             <picture>
               <source type="image/webp" srcset="img/feedback-girl.webp">
@@ -547,12 +545,14 @@
       <div class="container">
         <div class="footer-top-wrapper">
           <h3 class="title footer-title">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h3>
-          <div class="input-group-wrapper">
-            <div class="input-group input-group-mail">
-              <input id="user-email" type="email" name="usermail" class="input input-email" placeholder="Введите Ваш email" minlength="10" required>
+          <form action="handler.php" method="POST" class="footer-form">
+            <div class="input-group-wrapper">
+              <div class="input-group input-group-mail">
+                <input id="user-email" type="email" name="useremail" class="input input-email" placeholder="Введите Ваш email" minlength="10" required>
+              </div>
+              <button type="submit" class="button footer-form-button">Подписаться</button>
             </div>
-            <button type="submit" class="button footer-form-button">Подписаться</button>
-          </div>
+          </form>  
         </div>
       </div>
     </div>
@@ -628,7 +628,7 @@
               </div>
           </div>
           <div class="footer-bottom-link">
-            <a href="#" class="footer-info-link">Заказать звонок</a>
+            <a href="#" class="footer-info-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
           </div>
         </div>
         <hr class="footer-seporator">
@@ -639,14 +639,14 @@
                 <use href="img/sprite.svg#logo"></use>
               </svg>
             </a>
-            <a class="apps-google">
+            <a class="apps">
               <picture>
                 <source type="image/webp" srcset="img/google.webp">
                 <source type="image/jpeg" srcset="img/google.png">
                 <img src="img/google.png" class="apps-image" width="151" height="45">
               </picture>
             </a>
-            <a class="apps-google">
+            <a class="apps">
               <picture>
                 <source type="image/webp" srcset="img/apple.webp">
                 <source type="image/jpeg" srcset="img/apple.png">
@@ -776,7 +776,6 @@
               <input id="modal-user-phone" type="tel" name="userphone" class="input input-modal phone-mask" placeholder="+7 (___) __ - __ -__" minlength="10" required>
               <button type="submit" class="button modal-form-button">Оформить предзаказ</button>
             </div>
-            
             <div class="notify notify-modal">
               <div class="notify-box-icon">
                 <svg class="notify-icon" width="10" height="10">
@@ -798,11 +797,17 @@
     </div>
   </div>
   <div class="modal" id="alert-modal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-alert">
+      <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+        <svg class="close-icon" width="30" height="30">
+          <use href="img/sprite.svg#close"></use>
+        </svg>
+      </a>
       <h2 class="alert-modal-title">Спасибо за заявку!</h2>
     </div>
   </div>
 
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
