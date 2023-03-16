@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,6 +10,13 @@
       * https://modernizr.com/download/?-webp-setclasses !*/
       !function(e,n,A){function o(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function t(e,n){return typeof e===n}function a(){var e,n,A,o,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(o=t(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=o:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=o),s.push((o?"":"no-")+l.join("-"))}}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var t=e.split("."),a=Modernizr[t[0]];if(2==t.length&&(a=a[t[1]]),"undefined"!=typeof a)return Modernizr;n="function"==typeof n?n():n,1==t.length?Modernizr[t[0]]=n:(!Modernizr[t[0]]||Modernizr[t[0]]instanceof Boolean||(Modernizr[t[0]]=new Boolean(Modernizr[t[0]])),Modernizr[t[0]][t[1]]=n),o([(n&&0!=n?"":"no-")+t.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=t(e,"undefined")||t(e.call,"undefined")?function(e,n){return n in e&&t(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),a(),o(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
     </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
     <title>KUGOO</title>
   </head>
   <body>
@@ -72,7 +79,7 @@
                 </button>
                 <div class="search">
                   <input class="search-line" placeholder="Искать самокат KUGO">
-                  <button type="submit" class="search-icon-btn">
+                  <button type="submit" class="button search-icon-button">
                     <svg class="search-icon" width="16" height="16">
                       <use href="img/sprite.svg#lupe"></use>
                     </svg>
@@ -183,7 +190,7 @@
         <picture>
           <source type="image/webp" srcset="img/scooters.webp">
           <source type="image/jpeg" srcset="img/scooters.png">
-          <img src="img/scooters.png" class="section-model-image" width="515" height="422">
+          <img src="img/scooters.png" class="section-model-image" alt="scooters" width="515" height="422">
         </picture>
       </div>
     </div>
@@ -195,7 +202,7 @@
         <picture>
           <source type="image/webp" srcset="img/girl.webp">
           <source type="image/jpeg" srcset="img/girl.png">
-          <img src="img/girl.png" class="section-education-image" width="515" height="463">
+          <img src="img/girl.png" class="section-education-image" alt="girl" width="515" height="463">
         </picture>
         <div class="section-education-inner">
             <div class="section-education-content">
@@ -254,7 +261,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/model.webp">
                   <source type="image/jpeg" srcset="img/model.png">
-                  <img src="img/model.png" class="card-image" width="242" height="182">
+                  <img src="img/model.png" class="card-image" alt="model" width="242" height="182">
                 </picture>
                 <div class="card-badge card-badge-red">ХИТ</div>
                 <div class="card-top-icon">
@@ -297,12 +304,12 @@
                       <h5 class="price-title-sale">29 900 ₽</h5>
                   </div>
                   <div class="card-bottom-icon">
-                    <button class="bottom-icon-box">
+                    <button class="button bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#pannier"></use>
                       </svg>
                     </button>
-                    <button class="bottom-icon-box">
+                    <button class="button bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#heart2"></use>
                       </svg>
@@ -317,7 +324,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/model.webp">
                   <source type="image/jpeg" srcset="img/model.png">
-                  <img src="img/model.png" class="card-image" width="242" height="182">
+                  <img src="img/model.png" class="card-image" alt="model" width="242" height="182">
                 </picture>
                 <div class="card-badge card-badge-green">Новинка</div>
                 <div class="card-top-icon">
@@ -360,12 +367,12 @@
                       <h5 class="price-title-sale">29 900 ₽</h5>
                   </div>
                   <div class="card-bottom-icon">
-                    <button class="bottom-icon-box">
+                    <button class="button bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#pannier"></use>
                       </svg>
                     </button>
-                    <button class="bottom-icon-box">
+                    <button class="button bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#heart2"></use>
                       </svg>
@@ -380,7 +387,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/model.webp">
                   <source type="image/jpeg" srcset="img/model.png">
-                  <img src="img/model.png" class="card-image" width="242" height="182">
+                  <img src="img/model.png" class="card-image" alt="model" width="242" height="182">
                 </picture>
                 <div class="card-badge card-badge-red">ХИТ</div>
                 <div class="card-top-icon">
@@ -423,12 +430,12 @@
                       <h5 class="price-title-sale">29 900 ₽</h5>
                   </div>
                   <div class="card-bottom-icon">
-                    <button class="bottom-icon-box">
+                    <button class="button bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#pannier"></use>
                       </svg>
                     </button>
-                    <button class="bottom-icon-box">
+                    <button class="button bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#heart2"></use>
                       </svg>
@@ -443,7 +450,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/model.webp">
                   <source type="image/jpeg" srcset="img/model.png">
-                  <img src="img/model.png" class="card-image" width="242" height="182">
+                  <img src="img/model.png" class="card-image" alt="model" width="242" height="182">
                 </picture>
                 <div class="card-badge card-badge-green">Новинка</div>
                 <div class="card-top-icon">
@@ -486,12 +493,12 @@
                       <h5 class="price-title-sale">29 900 ₽</h5>
                   </div>
                   <div class="card-bottom-icon">
-                    <button class="bottom-icon-box">
+                    <button class="button bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#pannier"></use>
                       </svg>
                     </button>
-                    <button class="bottom-icon-box">
+                    <button class="button bottom-icon-box">
                       <svg class="icon-card" width="20" height="20">
                         <use href="img/sprite.svg#heart2"></use>
                       </svg>
@@ -515,7 +522,14 @@
                 <p class="text feedback-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
                 <div class="input-group-wrapper">
                   <div class="input-group">
-                    <input id="user-phone" type="tel" name="userphone" class="input input-phone phone-mask" placeholder="+7 (___) __ - __ - __" minlength="10" required>
+                    <input 
+                    id="user-phone" 
+                    type="tel" 
+                    name="userphone" 
+                    class="input input-phone phone-mask" 
+                    placeholder="+7 (___) __ - __ - __" 
+                    minlength="10" 
+                    required>
                   </div>
                   <button type="submit" class="button feedback-form-button">Оставить заявку на тест-драйв</button>
                 </div>
@@ -533,7 +547,7 @@
             <picture>
               <source type="image/webp" srcset="img/feedback-girl.webp">
               <source type="image/jpeg" srcset="img/feedback-girl.png">
-              <img src="img/feedback-girl.png" class="feedback-image" width="410">
+              <img src="img/feedback-girl.png" class="feedback-image" alt="feeback-girl" width="410">
             </picture>
           </div>
         </div>
@@ -548,7 +562,14 @@
           <form action="handler.php" method="POST" class="footer-form">
             <div class="input-group-wrapper">
               <div class="input-group input-group-mail">
-                <input id="user-email" type="email" name="useremail" class="input input-email" placeholder="Введите Ваш email" minlength="10" required>
+                <input 
+                id="user-email" 
+                type="email" 
+                name="useremail" 
+                class="input input-email" 
+                placeholder="Введите Ваш email" 
+                minlength="10" 
+                required>
               </div>
               <button type="submit" class="button footer-form-button">Подписаться</button>
             </div>
@@ -643,19 +664,19 @@
               <picture>
                 <source type="image/webp" srcset="img/google.webp">
                 <source type="image/jpeg" srcset="img/google.png">
-                <img src="img/google.png" class="apps-image" width="151" height="45">
+                <img src="img/google.png" class="apps-image" alt="google" width="151" height="45">
               </picture>
             </a>
             <a class="apps">
               <picture>
                 <source type="image/webp" srcset="img/apple.webp">
                 <source type="image/jpeg" srcset="img/apple.png">
-                <img src="img/apple.png" class="apps-image" width="135" height="45">
+                <img src="img/apple.png" class="apps-image" alt="apple" width="135" height="45">
               </picture>
             </a>
           </div>
           <div class="apps-right">
-                <div class="box box-vk">
+                <a href="#" class="box box-vk">
                   <svg class="apps-icon" width="20" height="20">
                     <use href="img/sprite.svg#vk"></use>
                   </svg>
@@ -663,8 +684,8 @@
                     <h6 class="box-title">Вконтакте</h6>
                     <p class="box-text">3 300</p>
                   </div>
-                </div>
-                <div class="box box-youtube">
+                </a>
+                <a href="#" class="box box-youtube">
                   <svg class="apps-icon" width="20" height="20">
                     <use href="img/sprite.svg#yt"></use>
                   </svg>
@@ -672,8 +693,8 @@
                     <h6 class="box-title">YouTube</h6>
                     <p class="box-text">3 603</p>
                   </div>
-                </div>
-                <div class="box box-telegram">
+                </a>
+                <a href="#" class="box box-telegram">
                   <svg class="apps-icon" width="20" height="20">
                     <use href="img/sprite.svg#tg"></use>
                   </svg>
@@ -681,7 +702,7 @@
                     <h6 class="box-title">Telegram</h6>
                     <p class="box-text">432</p>
                   </div>
-                </div>
+                </a>
           </div>
         </div>
         <hr class="footer-seporator">
@@ -751,7 +772,6 @@
                   </svg>
                 </a>
               </div>
-              
             </div>
           </div>
         </div>

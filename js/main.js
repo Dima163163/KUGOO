@@ -32,6 +32,11 @@ document.addEventListener("keyup", (event) => {
   }
 });
 
+// const forms = document.querySelectorAll("form");
+// forms.forEach((form) => {
+//   console.log(form);
+// });
+
 const forms = document.querySelectorAll("form"); // Собираем формы
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
@@ -65,38 +70,34 @@ forms.forEach((form) => {
       },
     ])
     .onSuccess((event) => {
-      console.log("Validation passes and form submitted", event);
+      const thisForm = event.target; // наша форма
+      const formData = new FormData(thisForm); // данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alertModal.classList.add("is-open");
+            currentModal.classList.remove("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            /* отслеживаем клик по окну и пустым областям */
+            currentModal.addEventListener("click", (event) => {
+              /* если клик в пустую область (не диалог)*/
+              if (!event.composedPath().includes(modalDialog)) {
+                /* закрываем оно */
+                currentModal.classList.remove("is-open");
+              }
+            });
+          } else {
+            alert("Ошибка. Текст ошибки: ".response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);
     });
-
-  // .onSuccess((event) => {
-  //   const thisForm = event.target; // наша форма
-  //   const formData = new FormData(thisForm); // данные из нашей формы
-  //   const ajaxSend = (formData) => {
-  //     fetch(thisForm.getAttribute("action"), {
-  //       method: thisForm.getAttribute("method"),
-  //       body: formData,
-  //     }).then((response) => {
-  //       if (response.ok) {
-  //         thisForm.reset();
-  //         alertModal.classList.add("is-open");
-  //         currentModal.classList.remove("is-open");
-  //         currentModal = alertModal;
-  //         modalDialog = currentModal.querySelector(".modal-dialog");
-  //         /* отслеживаем клик по окну и пустым областям */
-  //         currentModal.addEventListener("click", (event) => {
-  //           /* если клик в пустую область (не диалог)*/
-  //           if (!event.composedPath().includes(modalDialog)) {
-  //             /* закрываем оно */
-  //             currentModal.classList.remove("is-open");
-  //           }
-  //         });
-  //       } else {
-  //         alert("Ошибка. Текст ошибки: ".response.statusText);
-  //       }
-  //     });
-  //   };
-  //   ajaxSend(formData);
-  // });
 });
 
 /* Создаем префикс +7, даже если вводят 8 или 9 */
