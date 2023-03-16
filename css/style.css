@@ -1208,6 +1208,9 @@ body {
     flex-direction: column-reverse;
     align-items: center;
   }
+  .feedback-form {
+    padding-left: 30px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1352,6 +1355,9 @@ body {
   .education-icon {
     min-width: 25px;
     min-height: 25px;
+  }
+  .feedback-form {
+    padding-left: 0;
   }
   .input-group-wrapper {
     justify-content: center;
