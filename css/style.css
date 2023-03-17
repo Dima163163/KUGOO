@@ -1318,6 +1318,9 @@ body {
   .navbar-bottom-wrapper {
     gap: 10px;
   }
+  .search {
+    min-width: 90%;
+  }
   .button-image {
     width: 100%;
   }
