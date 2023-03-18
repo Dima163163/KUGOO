@@ -1639,3 +1639,10 @@ body {
     max-width: 100%;
   }
 }
+
+@media (max-width: 390px) {
+  .notify-modal .just-validate-error-label {
+    top: 40px;
+    left: 50px;
+  }
+}
