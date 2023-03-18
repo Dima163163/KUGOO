@@ -1641,11 +1641,15 @@ body {
   .modal-form {
     max-width: 100%;
   }
+  .notify-modal .just-validate-error-label {
+    top: 50px;
+  }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 384px) {
   .notify-modal .just-validate-error-label {
     top: 70px;
     left: 50px;
+    width: 100%;
   }
 }
