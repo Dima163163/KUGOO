@@ -1179,10 +1179,6 @@ body {
 
 .modal-input-group {
   position: relative;
-  display: flex;
-  align-items: start;
-  gap: 24px;
-  flex-direction: column;
 }
 
 .modal-form {
@@ -1207,11 +1203,8 @@ body {
 }
 
 .input-modal::-webkit-input-placeholder {
-  width: 90%;
+  width: 100%;
   font-size: 16px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.155em;
   color: #5d6c7b;
 }
 
@@ -1472,6 +1465,12 @@ body {
   .props-link:hover,
   .footer-policy:hover {
     color: #5d6c7b;
+  }
+  .modal-wrapper {
+    gap: 0;
+  }
+  .input-modal::-webkit-input-placeholder {
+    text-align: left;
   }
 }
 
