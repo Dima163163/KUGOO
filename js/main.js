@@ -172,7 +172,7 @@ formsPhone.forEach((formPhone) => {
     .addField(".checkbox", [
       {
         rule: "required",
-        errorMessage: "Политика конфеденциальности не подтверждена",
+        errorMessage: "Подтвердите согласие",
       },
     ])
     .onSuccess((event) => {

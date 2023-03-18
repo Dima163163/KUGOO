@@ -701,10 +701,23 @@ body {
 }
 
 .notify {
+  position: relative;
   margin-top: 20px;
   display: flex;
   gap: 12px;
   align-items: start;
+}
+
+.input-group .just-validate-error-label {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+
+.notify .just-validate-error-label {
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 .notify-checkbox-feedback {
@@ -1181,6 +1194,18 @@ body {
   width: 100%;
 }
 
+.modal-input-group .just-validate-error-label {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+
+.notify-modal .just-validate-error-label {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+
 .input-modal::-webkit-input-placeholder {
   width: 90%;
   font-size: 16px;
@@ -1295,12 +1320,6 @@ body {
   text-decoration: none;
   align-items: center;
   margin: 0;
-}
-
-.just-validate-error-label {
-  position: absolute;
-  bottom: 4px;
-  left: 20px;
 }
 
 @media (max-width: 1400px) {
