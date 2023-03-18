@@ -515,8 +515,8 @@
               <form action="handler.php" method="POST" class="feedback-form user-phone-form">
                   <h3 class="title feedback-title">Нет нужной модели, которую хотите протестировать?</h3>
                   <p class="text feedback-text">Оставьте заявку, и менеджер подберет нужный самокат</p>
-                  <div class="input-group-wrapper">
-                    <div class="input-group">
+                  <div class="input-group-wrapper input-group-feedback-wrapper">
+                    <div class="input-group input-group-feedback">
                       <input 
                         id="user-phone" 
                         type="tel" 
