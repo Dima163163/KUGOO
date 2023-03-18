@@ -710,7 +710,7 @@ body {
 
 .input-group .just-validate-error-label {
   position: absolute;
-  bottom: 0px;
+  bottom: -18px;
   left: 20px;
 }
 
@@ -1192,7 +1192,7 @@ body {
 
 .modal-input-group .just-validate-error-label {
   position: absolute;
-  bottom: 0px;
+  bottom: -16px;
   left: 20px;
 }
 
@@ -1679,8 +1679,20 @@ body {
     top: 50px;
   }
   .notify-modal .just-validate-error-label {
-    top: 70px;
+    top: 55px;
     left: 50px;
     width: 100%;
+  }
+}
+
+@media (max-width: 355px) {
+  .notify-modal .just-validate-error-label {
+    top: 60px;
+  }
+}
+
+@media (max-width: 345px) {
+  .notify-modal .just-validate-error-label {
+    top: 70px;
   }
 }
