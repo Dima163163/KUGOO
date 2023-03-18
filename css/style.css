@@ -1310,6 +1310,14 @@ body {
     max-width: 100%;
     margin: 0 auto;
   }
+  .section-model-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-education-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1335,6 +1343,8 @@ body {
     );
   }
   .section-model-wrapper {
+    padding-left: 0;
+    padding-right: 0;
     align-items: center;
     flex-direction: column;
   }
@@ -1345,6 +1355,8 @@ body {
     min-width: 100%;
   }
   .section-education-wrapper {
+    padding-left: 0;
+    padding-right: 0;
     flex-direction: column-reverse;
     align-items: center;
   }
