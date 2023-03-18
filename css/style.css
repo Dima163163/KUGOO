@@ -1472,6 +1472,9 @@ body {
   .input-modal::-webkit-input-placeholder {
     text-align: left;
   }
+  .notify-modal {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1642,7 +1645,7 @@ body {
 
 @media (max-width: 390px) {
   .notify-modal .just-validate-error-label {
-    top: 40px;
+    top: 70px;
     left: 50px;
   }
 }
