@@ -749,6 +749,7 @@ body {
 }
 
 .notify-text {
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1298,8 +1299,8 @@ body {
 
 .just-validate-error-label {
   position: absolute;
-  bottom: 0;
-  left: 5px;
+  bottom: 4px;
+  left: 20px;
 }
 
 @media (max-width: 1400px) {

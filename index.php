@@ -532,7 +532,7 @@
                   <div class="notify">
                     <div class="notify-checkbox-feedback">
                         <label class="checkbox__label">
-                          <input type="checkbox" class="notify-real-checkbox" checked>
+                          <input type="checkbox" class="notify-real-checkbox checkbox">
                           <span class="notify-custom-checkbox"></span>
                         </label>
                     </div>
@@ -796,7 +796,7 @@
               <div class="notify notify-modal">
                 <div class="notify-checkbox">
                   <label class="checkbox__label">
-                    <input type="checkbox" class="modal-real-checkbox" checked>
+                    <input type="checkbox" class="modal-real-checkbox checkbox">
                     <span class="modal-custom-checkbox"></span>
                   </label>
                 </div>

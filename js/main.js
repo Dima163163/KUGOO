@@ -169,6 +169,12 @@ formsPhone.forEach((formPhone) => {
         errorMessage: "Введите все цифры",
       },
     ])
+    .addField(".checkbox", [
+      {
+        rule: "required",
+        errorMessage: "Политика конфеденциальности не подтверждена",
+      },
+    ])
     .onSuccess((event) => {
       const thisForm = event.target; // наша форма
       const formDataPhone = new FormData(thisForm); // данные из нашей формы
