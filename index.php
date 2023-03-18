@@ -17,7 +17,7 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
-    <title>KUGOO</title>
+    <title>KUGOO - Главаная</title>
   </head>
   <body>
     <header class="header">
@@ -37,17 +37,17 @@
                 </li>
                 <li class="navbar-item navbar-item-social">
                   <a href="#" class="navbar-link-social">
-                    <svg class="social-icon" width="12" height="12">
+                    <svg class="navbar-social-icon" width="12" height="12">
                       <use href="img/sprite.svg#viber"></use>
                     </svg>
                   </a>
                   <a href="#" class="navbar-link-social">
-                    <svg class="social-icon" width="12" height="12">
+                    <svg class="navbar-social-icon" width="12" height="12">
                       <use href="img/sprite.svg#whatsapp"></use>
                     </svg>
                   </a>
                   <a href="#" class="navbar-link-social">
-                    <svg class="social-icon" width="12" height="12">
+                    <svg class="navbar-social-icon" width="12" height="12">
                       <use href="img/sprite.svg#telegram"></use>
                     </svg>
                   </a>
@@ -98,7 +98,7 @@
                       </svg>
                      </a> 
                     <a href="#" class="icon-link">
-                      <svg class="social-icon" width="20" height="20">
+                      <svg class="social-icon-panner" width="20" height="20">
                         <use href="img/sprite.svg#pannier"></use>
                       </svg>
                       <p class="icon-text">Корзина</p>
@@ -530,10 +530,11 @@
                     <button type="submit" class="button feedback-form-button">Оставить заявку на тест-драйв</button>
                   </div>
                   <div class="notify">
-                    <div class="notify-box-icon">
-                      <svg class="notify-icon" width="10" height="10">
-                        <use href="img/sprite.svg#checkbox"></use>
-                      </svg>
+                    <div class="notify-checkbox-feedback">
+                        <label class="checkbox__label">
+                          <input type="checkbox" class="notify-real-checkbox">
+                          <span class="notify-custom-checkbox"></span>
+                        </label>
                     </div>
                     <p class="notify-text">
                       Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a class="notify-text-link">политикой конфиденциальности</a>
@@ -753,17 +754,17 @@
                 </p>
                 <div class="footer-social-link">
                   <a href="#" class="footer-link-social">
-                    <svg class="social-icon" width="16" height="16">
+                    <svg class="footer-social-icon" width="16" height="16">
                       <use href="img/sprite.svg#viber"></use>
                     </svg>
                   </a>
                   <a href="#" class="footer-link-social">
-                    <svg class="social-icon" width="16" height="16">
+                    <svg class="footer-social-icon" width="16" height="16">
                       <use href="img/sprite.svg#whatsapp"></use>
                     </svg>
                   </a>
                   <a href="#" class="footer-link-social">
-                    <svg class="social-icon" width="16" height="16">
+                    <svg class="footer-social-icon" width="16" height="16">
                       <use href="img/sprite.svg#telegram"></use>
                     </svg>
                   </a>
@@ -793,10 +794,11 @@
               </div>
               <button type="submit" class="button modal-form-button">Оформить предзаказ</button>
               <div class="notify notify-modal">
-                <div class="notify-box-icon">
-                  <svg class="notify-icon" width="10" height="10">
-                    <use href="img/sprite.svg#checkbox"></use>
-                  </svg>
+                <div class="notify-checkbox">
+                  <label class="checkbox__label">
+                    <input type="checkbox" class="modal-real-checkbox">
+                    <span class="modal-custom-checkbox"></span>
+                  </label>
                 </div>
                 <p class="notify-text notify-text-modal">
                   Нажимая на кнопку, вы соглашаетесь <br> на обработку персональных данных и <a class="notify-text-link-modal">политикой конфиденциальности</a>

@@ -119,8 +119,8 @@ formsEmail.forEach((formEmail) => {
       },
       {
         rule: "minLength",
-        value: 15,
-        errorMessage: "Минимум 15 символов",
+        value: 7,
+        errorMessage: "Минимум 7 символов",
       },
     ])
     .onSuccess((event) => {
