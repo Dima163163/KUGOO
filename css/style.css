@@ -80,6 +80,10 @@ body {
   color: #282739;
 }
 
+.header-phone-link:hover {
+  color: #6f73ee;
+}
+
 .header-seporator {
   margin: 0;
   background-color: #ecf3ff;
@@ -740,6 +744,7 @@ body {
   height: 16px;
   background: #ffffff;
   border-radius: 2px;
+  z-index: 2;
 }
 
 .notify-custom-checkbox::before {
@@ -762,7 +767,11 @@ body {
 }
 
 .notify-text {
-  position: relative;
+  padding-left: 30px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  position: absolute;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -773,6 +782,7 @@ body {
 }
 
 .notify-text-link {
+  border-bottom: 1px solid #282739;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -935,6 +945,10 @@ body {
   line-height: 23px;
   color: #282739;
   text-decoration: none;
+}
+
+.footer-phone:hover {
+  color: #6f73ee;
 }
 
 .footer-text-visit {
@@ -1287,6 +1301,10 @@ body {
   margin-top: 18px;
 }
 
+.notify-text-modal {
+  padding-left: 50px;
+}
+
 .notify-text-link-modal {
   font-weight: 400;
   font-size: 12px;
@@ -1488,11 +1506,23 @@ body {
   .footer-policy:hover {
     color: #5d6c7b;
   }
+  .footer-phone:hover {
+    color: #282739;
+  }
+  .header-phone-link:hover {
+    color: #282739;
+  }
+  .notify {
+    min-width: 400px;
+  }
   .modal-wrapper {
     gap: 0;
   }
   .input-modal::-webkit-input-placeholder {
     text-align: left;
+  }
+  .modal-dialog {
+    padding: 36px 57px 44px 40px;
   }
   .notify-modal {
     min-width: 100%;
@@ -1515,6 +1545,11 @@ body {
   }
   .modal-dialog {
     max-width: 94%;
+  }
+  .section-model,
+  .section-education {
+    max-width: 90%;
+    margin: auto;
   }
 }
 
@@ -1557,6 +1592,9 @@ body {
   .button-image {
     width: 100%;
   }
+  .navbar-bottom-wrapper {
+    margin-bottom: 10px;
+  }
   .section-image-content {
     padding-left: 0;
   }
@@ -1572,11 +1610,35 @@ body {
   }
   .title {
     text-align: center;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .section-model-wrapper {
+    gap: 20px;
+  }
+  .section-model {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .model-title-br {
+    display: none;
   }
   .section-model-inner {
     width: 90%;
+  }
+  .section-model-text,
+  .section-education-text {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+  .section-model-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .section-education {
+    max-width: 100%;
+    margin-top: 20px;
   }
   .section-education-inner {
     width: 90%;
@@ -1584,6 +1646,13 @@ body {
   .section-model-image {
     max-width: 100%;
     border-radius: 0;
+  }
+  .section-education-wrapper {
+    gap: 20px;
+  }
+  .section-education-item {
+    margin-bottom: 10px;
+    font-size: 16px;
   }
   .section-education-image {
     max-width: 100%;
@@ -1593,6 +1662,19 @@ body {
   .education-icon {
     min-width: 25px;
     min-height: 25px;
+  }
+  .section-test {
+    margin-top: 30px;
+  }
+  .test-title {
+    margin-bottom: 30px;
+  }
+  .section-feedback {
+    margin-top: 30px;
+  }
+  .section-feedback-wrapper {
+    padding-top: 40px;
+    padding-bottom: 56px;
   }
   .feedback-form {
     padding-left: 0;
@@ -1613,6 +1695,7 @@ body {
   .footer-bottom-inner {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
   .footer-menu-list {
     text-align: center;
@@ -1651,6 +1734,9 @@ body {
   .social-media {
     flex-wrap: wrap;
   }
+  .notify {
+    min-width: 80%;
+  }
   .modal-dialog {
     max-width: 90%;
   }
@@ -1666,32 +1752,50 @@ body {
   .modal-form {
     max-width: 100%;
   }
+  .modal-title {
+    padding-bottom: 10px;
+  }
+  .modal-text {
+    margin-bottom: 10px;
+  }
   .notify-modal .just-validate-error-label {
-    top: 50px;
+    top: 40px;
+  }
+  .notify .just-validate-error-label {
+    top: 44px;
+  }
+  .footer {
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 384px) {
   .modal-dialog {
-    padding: 36px 32px 32px 40px;
+    padding: 36px 32px 44px 40px;
   }
   .notify .just-validate-error-label {
     top: 50px;
   }
   .notify-modal .just-validate-error-label {
-    top: 55px;
+    top: 42px;
     left: 50px;
     width: 100%;
   }
 }
 
 @media (max-width: 355px) {
+  .modal-dialog {
+    padding: 36px 32px 60px 40px;
+  }
   .notify-modal .just-validate-error-label {
     top: 60px;
   }
 }
 
 @media (max-width: 345px) {
+  .modal-dialog {
+    padding: 36px 32px 80px 40px;
+  }
   .notify-modal .just-validate-error-label {
     top: 70px;
   }

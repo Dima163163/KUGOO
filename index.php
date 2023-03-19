@@ -155,7 +155,7 @@
           <div class="section-model-inner">
               <div class="section-model-content">
               <h3 class="title section-model-title">
-                Определите максимально подходящую вам модель <br> не теоретически, а на практике
+                Определите максимально подходящую вам модель <br class="model-title-br"> не теоретически, а на практике
               </h3>
               <p class="section-model-text">Тест-драйв поможет:</p>
               <ul class="section-model-list">
@@ -531,14 +531,15 @@
                   </div>
                   <div class="notify">
                     <div class="notify-checkbox-feedback">
-                        <label class="checkbox__label">
+                        <label class="checkbox__label" type="checkbox">
                           <input type="checkbox" class="notify-real-checkbox checkbox">
                           <span class="notify-custom-checkbox"></span>
+                          <p class="notify-text">
+                            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a class="notify-text-link">политикой конфиденциальности</a>
+                          </p>
                         </label>
                     </div>
-                    <p class="notify-text">
-                      Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и <a class="notify-text-link">политикой конфиденциальности</a>
-                    </p>
+                    
                   </div>
               </form>
               <picture>
@@ -798,11 +799,12 @@
                   <label class="checkbox__label">
                     <input type="checkbox" class="modal-real-checkbox checkbox">
                     <span class="modal-custom-checkbox"></span>
+                    <p class="notify-text notify-text-modal">
+                      Нажимая на кнопку, вы соглашаетесь <br> на обработку персональных данных и <a class="notify-text-link-modal">политикой конфиденциальности</a>
+                    </p>
                   </label>
                 </div>
-                <p class="notify-text notify-text-modal">
-                  Нажимая на кнопку, вы соглашаетесь <br> на обработку персональных данных и <a class="notify-text-link-modal">политикой конфиденциальности</a>
-                </p>
+                
               </div>
             </form>
           </div>
