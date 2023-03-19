@@ -126,6 +126,10 @@ body {
   height: 40px;
 }
 
+.navbar-button:hover {
+  background: blue;
+}
+
 .navbar-btn-line {
   background-color: #ffffff;
   height: 1px;
@@ -1416,6 +1420,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  .navbar-button:hover {
+    background: #6f73ee;
+  }
   .button-image:hover {
     background: #ffffff;
   }
